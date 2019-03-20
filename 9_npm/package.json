@@ -1,0 +1,13 @@
+{
+  "name": "9_npm",
+  "version": "1.0.0",
+  "description": "node app",
+  "main": "app_html.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yanggui",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {}
+}
