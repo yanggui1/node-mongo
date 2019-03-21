@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Home Page</title>
+    </head>
+
+    <style>
+        body{
+            background: skyblue;
+            color: #FFF;
+            padding: 30px;
+        }
+
+        h1{
+            font-size: 48px;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        p{
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+
+    <body>
+        <h1>Welcome To <%= websiteName %> page！</h1>
+        <h2>个人介绍</h2>
+
+        <ul>
+            <% data.forEach((item) => { %>
+                <li><%= item.age %></li>
+                <% item.name.forEach((nameItem)=>{ %>
+                    <li> <%= nameItem%> </li>
+                <% }) %>
+            <% }) %>
+        </ul>
+
+    </body>
+</html>
